@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {box-sizing: border-box;}
+
+body { 
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.header {
+  overflow: hidden;
+  background-color: #f1f1f1;
+  padding: 20px 10px;
+}
+
+.header a {
+  float: left;
+  color: black;
+  text-align: center;
+  padding: 12px;
+  text-decoration: none;
+  font-size: 18px; 
+  line-height: 25px;
+  border-radius: 4px;
+}
+
+.header a.logo {
+  font-size: 25px;
+  font-weight: bold;
+}
+
+.header a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.header a.active {
+  background-color: #322186;
+  color: white;
+}
+
+.header-right {
+  float: right;
+}
+
+@media screen and (max-width: 500px) {
+  .header a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+  
+  .header-right {
+    float: none;
+  }
+}
+</style>
+</head>
+<body>
+  <!-- HEADER SECTION -->
+  <div class="header">
+    <a href="#default" class="logo" >ಮೇಘ ಸೌಹಾರ್ದ ಕ್ರೆಡಿಟ್ ಕೋ-ಆಪರೇಟಿವ್ ಲಿಮಿಟೆಡ್<br>  
+      MEGHA SOUHARDHA CREDIT CO-OPERATIVE LTD</a>
+    <div class="header-right">
+      <a href="./index.html">Home</a>
+      <a href="./megha_schemes.html">Megha scheme</a>
+      <a href="./management.html">Management</a>
+      <a href="./gallery.html">Gallery</a>
+      <a href="./about.html">About</a>
+      <a class="active" href="./contact.html">Contact Us</a>
+      
+    </div>
+  </div>
+
+
+<!-- CONTENT SECTION -->
+
+
+<style>
+body {font-family: Arial, Helvetica, sans-serif;}
+* {box-sizing: border-box;}
+
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+input[type=submit] {
+  background-color: #322186;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+.container {
+  border-radius: 5px;
+  background-color: #d9dbe6;
+  padding: 20px;
+  margin-left: 35px;
+  margin-right: 35px;
+}
+</style>
+</head>
+<body>
+
+<br><br>
+<div class="container">
+  <form action="/action_page.php">
+    <label for="fname">NAME</label>
+    <input type="text" id="fname" name="firstname" placeholder="Your name..">
+
+    <label for="lname">E-MAIL</label>
+    <input type="text" id="lname" name="lastname" placeholder="Your E-mail Id..">
+
+   
+
+    <label for="subject">MESSAGE</label>
+    <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+
+    <input type="submit" value="Submit">
+  </form>
+</div>
+
+<br><br>
+
+<!-- FOOTER SECTION -->
+<style>
+  .footer {
+  overflow: hidden;
+  background-color: #f1f1f1;
+  padding: 20px 10px;
+}
+/* Create three equal columns that floats next to each other */
+.column {
+  float:left   ;
+  width: 33.33%;
+  padding: 15px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+
+
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+@media screen and (max-width:600px) {
+  .column {
+    width: 100%;
+  }
+}
+
+</style>
+
+
+<div class="footer">
+  <div class="row">
+    <div class="column" align="center">
+      <p>Call us:08392-279279</p>
+    </div>
+    
+    <div class="column" align="center">
+      <p>No 142/2, First floor NC Complex opp, Adarsh Hart Care,
+      Kolachalam Compound, Opp Old Ksrtc Bustand,
+      Ballari-583101.
+      KARNATAKA.</p>
+    </div>
+    
+    <div class="column" align="center">
+      <img src="./imgs/facebook.png" style="width: 45px;height: 45px;">
+      <img src="./imgs/youtube.png"  style="width: 45px;height: 45px;">
+      <img src="./imgs/whatsapp.png" style="width: 45px;height: 45px;">
+    </div>
+  </div>
+  
+
+</div>
+
+
+</body>
+</html>
+

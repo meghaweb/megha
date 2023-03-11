@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="./style.css">
+
+<style>
+* {box-sizing: border-box;}
+
+body { 
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.header {
+  overflow: hidden;
+  background-color: #f1f1f1;
+  padding: 20px 10px;
+}
+
+.header a {
+  float: left;
+  color: black;
+  text-align: center;
+  padding: 12px;
+  text-decoration: none;
+  font-size: 18px; 
+  line-height: 25px;
+  border-radius: 4px;
+}
+
+.header a.logo {
+  font-size: 25px;
+  font-weight: bold;
+}
+
+.header a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.header a.active {
+  background-color: #322186;
+  color: white;
+}
+
+.header-right {
+  float: right;
+}
+
+@media screen and (max-width: 500px) {
+  .header a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+  
+  .header-right {
+    float: none;
+  }
+}
+</style>
+</head>
+<body>
+
+  <!-- HEADER SECTION -->
+<div class="header">
+  <a href="#default" class="logo" >ಮೇಘ ಸೌಹಾರ್ದ ಕ್ರೆಡಿಟ್ ಕೋ-ಆಪರೇಟಿವ್ ಲಿಮಿಟೆಡ್<br>  
+    MEGHA SOUHARDHA CREDIT CO-OPERATIVE LTD</a>
+  <div class="header-right">
+    <a class="active" href="./index.html">Home</a>
+    <a href="./megha_schemes.html">Megha scheme</a>
+    <a href="./management.html">Management</a>
+    <a href="./gallery.html">Gallery</a>
+    <a href="./about.html">About</a>
+    <a href="./contact.html">Contact Us</a>
+    
+  </div>
+</div>
+
+
+
+<!-- IMAGE BANNER -->
+<div class="slideshow-container">
+
+  <div class="mySlides fade">
+    <img src="./imgs/savings.jpg" style="width:100%">
+  </div>
+  
+  <div class="mySlides fade">
+    <img src="./imgs/housing.jpg" style="width:100%">
+  </div>
+  
+  <div class="mySlides fade">
+    <img src="./imgs/mortage.jpg" style="width:100%">
+  </div>
+
+  <div class="mySlides fade">
+    <img src="./imgs/fi.jpg" style="width:100%">
+  </div>
+  
+  <div class="mySlides fade">
+    <img src="./imgs/pl.jpg" style="width:100%">
+  </div>
+
+  <div class="mySlides fade">
+    <img src="./imgs/rd.jpg" style="width:100%">
+  </div>
+
+  </div>
+  <br>
+  
+  <div style="text-align:center">
+    <span class="dot"></span> 
+    <span class="dot"></span> 
+    <span class="dot"></span> 
+    <span class="dot"></span> 
+    <span class="dot"></span> 
+    <span class="dot"></span> 
+
+
+  </div>
+  
+  <script>
+  let slideIndex = 0;
+  showSlides();
+  
+  function showSlides() {
+    let i;
+    let slides = document.getElementsByClassName("mySlides");
+    let dots = document.getElementsByClassName("dot");
+    for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  
+    }
+    slideIndex++;
+    if (slideIndex > slides.length) {slideIndex = 1}    
+    for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+    }
+    slides[slideIndex-1].style.display = "block";  
+    dots[slideIndex-1].className += " active";
+    setTimeout(showSlides, 5000); // Change image every 2 seconds
+  }
+  </script>
+  
+
+<br>
+<br>
+
+<!-- CONTENT SECTION -->
+<style>
+  .content {
+  overflow: hidden;
+  background-color: #d9dbe6;
+  padding: 20px 10px;
+  border-radius: 10px;
+  margin-left: 30px;
+  margin-right: 30px;
+}
+/* Create three equal columns that floats next to each other */
+.column {
+  float:left   ;
+  width: 33.33%;
+  padding: 15px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+
+.p_content{
+  font-family: "Lucida Console", "Courier New", monospace;
+  font-size: large;
+
+}
+
+ul.b {
+  list-style-type: square;
+}
+
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+@media screen and (max-width:600px) {
+  .column {
+    width: 100%;
+  }
+}
+
+</style>
+
+<div class="content" align="center">
+  
+  <div class="row" >
+    <h2><b></u> VISION</b></h2>
+    <p class="p_content">
+     To make financial services universally available to promote poverty alleviation through the development of a strong, 
+     <br><br> sustainable economic infrastructure using financially sound market mechanisms
+    </p>
+  </div>
+
+  <div class="row" >
+    <h2><b>MISSION</b></h2>
+    <p class="p_content">
+      Linking the promotion of sustainable livelihoods with income-generation activities for the community <br><br>
+      Ensure that all members follow the democratic way of making policies and electing representatives and have an equal voice <br><br>
+      Ensure that all profits are controlled democratically by members and for their benefit <br><br>
+      Enhance accessibility of financial services <br><br>        
+    </p>
+  </div>
+
+  <div class="row" >
+    <h2><b>OBJECTIVES</b></h2>
+    <p class="p_content">
+      Inculcate good habits of savings in the cooperative members <br><br>
+      Focus on poor, low-income and deprived people of the community, especially women who have no accessibility to any financial institutions <br><br>
+      Provide opportunities to people to organize services collectively by pooling their resources without depending upon the government or other agencies <br><br>
+      Provide education, training and information to develop their members as well as their staff <br><br>
+      Enhance women’s participation and decision in policy making-processes at all levels <br><br>
+             
+    </p>
+  </div>
+
+</div>
+
+
+<br>
+<br>
+
+<!-- FOOTER SECTION -->
+<style>
+  .footer {
+  overflow: hidden;
+  background-color: #f1f1f1;
+  padding: 20px 10px;
+}
+/* Create three equal columns that floats next to each other */
+.column {
+  float:left   ;
+  width: 33.33%;
+  padding: 15px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+
+
+
+
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+@media screen and (max-width:600px) {
+  .column {
+    width: 100%;
+  }
+}
+
+</style>
+
+
+<div class="footer">
+  <div class="row">
+    <div class="column" align="center">
+      <p>Call us:08392-279279</p>
+    </div>
+    
+    <div class="column" align="center">
+      <p>No 142/2, First floor NC Complex opp, Adarsh Hart Care,
+      Kolachalam Compound, Opp Old Ksrtc Bustand,
+      Ballari-583101.
+      KARNATAKA.</p>
+    </div>
+    
+    <div class="column" align="center">
+      <img src="{{url_for('static', filename='facebook.png')}}" style="width: 45px;height: 45px;">
+      <img src="{{url_for('static', filename='youtube.png')}}"  style="width: 45px;height: 45px;">
+      <img src="{{url_for('static', filename='whatsapp.png')}}" style="width: 45px;height: 45px;">
+    </div>
+  </div>
+  
+
+</div>
+
+
+</body>
+</html>
