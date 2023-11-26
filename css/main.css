@@ -1,0 +1,128 @@
+/* Common styles for both desktop and mobile */
+header {
+    background-color: #f4f0e5;
+    color: #242323;
+    text-align: center;
+    padding: 10px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+main {
+    margin-top: 10px;
+    height: 100%;
+    margin-bottom: 10px;
+    background-color: #f4f0e5;
+}
+
+.centered-image {
+    display: block;
+    width: 80px;
+    height: 80px;
+}
+
+h1 {
+    color: #0A62AF;
+}
+
+h2 {
+    color: #0A62AF;
+}
+
+/* CSS for the navigation bar */
+nav {
+    background-color: #cf640d;
+    padding: 20px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav li {
+    margin: 0 10px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #f1eded;
+    transition: color 0.3s; /* Add a smooth transition effect */
+}
+
+/* Add the hover effect */
+nav a:hover {
+    border-color: #f1eded;
+    border-radius: 5;
+    color: #fff; /* Change the text color on hover */
+}
+
+.vmbcontainer{
+    margin: 10px;
+}
+
+.vmbtext h2{
+    text-decoration: underline;
+    margin: 10px;
+    display: flexbox;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+}
+
+.vmbtext p{
+    margin: 10px;
+    display: flexbox;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+
+}
+
+
+/* Media query for mobile devices (adjust the breakpoint as needed) */
+@media (max-width: 768px) {
+    header {
+        padding: 20px 0; /* Increase header padding for mobile */
+    }
+
+    h1 {
+        font-size: 24px; /* Decrease font size for h1 on mobile */
+    }
+
+    h2 {
+        font-size: 18px; /* Decrease font size for h2 on mobile */
+    }
+
+    nav {
+        padding: 10px; /* Decrease padding for nav on mobile */
+    }
+
+    nav ul {
+        flex-direction: column; /* Stack nav items vertically on mobile */
+    }
+
+    nav li {
+        margin: 10px 0; /* Add space between nav items on mobile */
+    }
+
+    .centered-image {
+        width: 50px; /* Adjust the image size for mobile */
+        height: 50px;
+    }
+
+
+
+}
+
+
+
+/* Additional mobile-specific styles and adjustments can be added as needed */

@@ -1,0 +1,15 @@
+div.scroll-container {
+    background-color: #e5a673;
+    overflow: auto;
+    white-space: nowrap;
+    padding: 5px;
+    height:550px;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 50px;
+    padding: 10px;
+  }
+  
+  div.scroll-container img {
+    padding: 2px;
+  }

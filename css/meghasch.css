@@ -1,0 +1,40 @@
+.card-container {
+    padding: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    
+}
+
+.cards {
+    border-radius: 20px;
+    height: 85px;
+    width: 250px;
+    background-color: #eaeae9;
+    padding: 20px;
+    display: flex;
+    gap: 30px;
+    align-items: center;
+    box-shadow: -3px -3px 7px #eb9797,
+        3px 3px 5px #e2b590;
+
+    
+}
+
+.cards h3 {
+    color: #695d5d;
+    width: 150px;
+    margin: 0 10px; /* Adjust the margin as needed */
+}
+
+.cards img {
+    width: 50px;
+}
+
+.scheme-name{
+
+    padding: 10px;
+    text-align: center;
+}
