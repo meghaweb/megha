@@ -1,0 +1,38 @@
+.about{
+    margin-left: 150px;
+    margin-right: 150px;
+    margin-top: 10px;
+    background-color: aliceblue;
+    padding: 15px;
+    border-radius: 10px;
+    border: 2px solid #e5a673;
+}
+.branches{
+    margin-left: 250px;
+    margin-right: 250px;
+    text-align: center;
+    border: 2px;
+}
+
+@media (max-width: 1125px){
+    .about{
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+    .branches{
+        margin-left: 100px;
+        margin-right: 100px;
+    }
+
+}
+@media (max-width: 768px) {
+    .about{
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+    .branches{
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+}
