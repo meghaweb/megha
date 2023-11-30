@@ -48,30 +48,49 @@
   <script>
     // JavaScript for handling slide navigation
     let currentSlide = 0;
-    const slides = document.querySelector('.slides');
-    const totalSlides = document.querySelectorAll('.slide').length;
+const slides = document.querySelector('.slides');
+const totalSlides = document.querySelectorAll('.slide').length;
+const slideInterval = 5000; // Adjust this value to set the interval between automatic slide changes (in milliseconds)
+let slideTimer;
 
-    function showSlide(index) {
-        if (index < 0) {
-            currentSlide = totalSlides - 1;
-        } else if (index >= totalSlides) {
-            currentSlide = 0;
-        } else {
-            currentSlide = index;
-        }
+function showSlide(index) {
+if (index < 0) {
+    currentSlide = totalSlides - 1;
+} else if (index >= totalSlides) {
+    currentSlide = 0;
+} else {
+    currentSlide = index;
+}
 
-        slides.style.transform = `translateX(${-currentSlide * 100}%)`;
-    }
+slides.style.transform = `translateX(${-currentSlide * 100}%)`;
+}
 
-    function prevSlide() {
-        showSlide(currentSlide - 1);
-    }
+function prevSlide() {
+clearInterval(slideTimer); // Stop the automatic slide change when manually navigating
+showSlide(currentSlide - 1);
+}
 
-    function nextSlide() {
-        showSlide(currentSlide + 1);
-    }
+function nextSlide() {
+clearInterval(slideTimer); // Stop the automatic slide change when manually navigating
+showSlide(currentSlide + 1);
+}
+
+function startSlideShow() {
+slideTimer = setInterval(() => {
+    showSlide(currentSlide + 1);
+}, slideInterval);
+}
+
+// Start the slideshow automatically
+startSlideShow();
+
+// Add event listeners for manual navigation
+document.querySelector('.prev-button').addEventListener('click', prevSlide);
+document.querySelector('.next-button').addEventListener('click', nextSlide);
+
+// Optionally, you can add additional event listeners for pause/play functionality, etc.
+
 </script>
-
     
 </body>
 </html>
