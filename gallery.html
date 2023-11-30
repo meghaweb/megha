@@ -27,27 +27,25 @@
             <li><a href="#">Contact Us</a></li>
         </ul>
     </nav>
-
     <div class="slider-container">
-      <h1 class="scheme-name">Gallery</h1>
-      <div class="slides">
-      
-          <div class="slide"><img src="imgs/rd.jpeg" alt="Image 1"></div>
-          <div class="slide"><img src="imgs/scroll1.jpeg" alt="Image 2"></div>
-          <div class="slide"><img src="imgs/scroll2.jpeg" alt="Image 3"></div>
-          <div class="slide"><img src="imgs/scroll3.jpeg" alt="Image 3"></div>
-          <div class="slide"><img src="imgs/scroll2.jpeg" alt="Image 3"></div>
-          <div class="slide"><img src="imgs/scroll1.jpeg" alt="Image 3"></div>
-          <div class="slide"><img src="imgs/rd.jpeg" alt="Image 3"></div>
-          <!-- Add more slides as needed -->
-      </div>
-  
-      <button class="arrow prev" onclick="prevSlide()">❮</button>
-      <button class="arrow next" onclick="nextSlide()">❯</button>
-  </div>
+        <h1 class="scheme-name">Gallery</h1>
+        <div class="slides">
+        
+            <div class="slide"><img src="imgs/rd.jpeg" alt="Image 1"></div>
+            <div class="slide"><img src="imgs/scroll1.jpeg" alt="Image 2"></div>
+            <div class="slide"><img src="imgs/scroll2.jpeg" alt="Image 3"></div>
+            <div class="slide"><img src="imgs/scroll3.jpeg" alt="Image 3"></div>
+            <div class="slide"><img src="imgs/scroll2.jpeg" alt="Image 3"></div>
+            <div class="slide"><img src="imgs/scroll1.jpeg" alt="Image 3"></div>
+            <div class="slide"><img src="imgs/rd.jpeg" alt="Image 3"></div>
+            <!-- Add more slides as needed -->
+        </div>
+    
+        <button class="arrow prev" onclick="prevSlide()">❮</button>
+        <button class="arrow next" onclick="nextSlide()">❯</button>
+    </div>
   <script>
-    // JavaScript for handling slide navigation
-    let currentSlide = 0;
+ let currentSlide = 0;
 const slides = document.querySelector('.slides');
 const totalSlides = document.querySelectorAll('.slide').length;
 const slideInterval = 5000; // Adjust this value to set the interval between automatic slide changes (in milliseconds)
@@ -91,6 +89,7 @@ document.querySelector('.next-button').addEventListener('click', nextSlide);
 // Optionally, you can add additional event listeners for pause/play functionality, etc.
 
 </script>
+
     
 </body>
 </html>
